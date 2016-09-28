@@ -5,7 +5,7 @@
 - Are *very* inconsistent in how they're used - H3-H5 are used interchangeably
 - Recommended to implement a consistent pattern based on hierarchy within a section
 
-![](https://github.com/department-of-veterans-affairs/vets.gov-frontend/blob/interface-audit/docs/interface-audit/images/heading-callout.png)
+![](https://github.com/department-of-veterans-affairs/vets.gov-frontend/blob/docs/interface-audit/images/heading-callout.png)
 
 ![](https://github.com/department-of-veterans-affairs/vets.gov-frontend/blob/interface-audit/docs/interface-audit/images/heading-callout-yes.png)
 
