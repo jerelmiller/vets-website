@@ -24,10 +24,16 @@ class LoginApp extends React.Component {
     }).then(response => {
       return response.json();
     }).then(json => {
-      window.opener.localStorage.setItem('userToken', json.token);
-      window.opener.postMessage(json.token, environment.BASE_URL);
-      localStorage.setItem('userToken', json.token);
-      window.close();
+      if (json.errors.length > 0) {
+        // TODO: Remove for production
+        // eslint-disable-next-line no-console
+        console.log('Error:', json.errors[0]);
+      } else {
+        window.opener.localStorage.setItem('userToken', json.token);
+        window.opener.postMessage(json.token, environment.BASE_URL);
+        localStorage.setItem('userToken', json.token);
+        window.close();
+      }
     });
   }
 
